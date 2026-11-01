@@ -98,7 +98,7 @@ Per Sam Pangilinan's global instructions:
 - **Release Tag URL**: `https://github.com/ZETIC7Z/gemini-ai-plus-claimer-app/releases/tag/v1.0.1`
 - **Direct Site Download**: `./downloads/Zeticuz AI Plus Gen.exe` (Bundled with Playwright & Chromium)
 - **Portable Zip Bundle**: `./downloads/Zeticuz AI Plus Gen v1.0.1 by ZETICUZ.zip`
-- **SHA-256 Checksum**: `EF7342C1319AB05F4011EFC5B93EA27ACC7A1FFDF361854F5408B56965F22B5F`
+- **SHA-256 Checksum**: `7DA218B03C277D45CF7D5F72F0C6856CEADA229655080C0999A3DE1065570A29`
 - **Brand Asset Architecture**:
   - Website App Logo & Desktop App Icon: `images/zeticuz_app_icon.png` (3rd image squircle monogram) & `images/app_icon.ico`
   - Desktop Application Header Banner: `images/zeticuz_header_logo.png` (2nd image 3D metallic red "ZE" monogram with crisp white bold uppercase "ZETICUZ")
