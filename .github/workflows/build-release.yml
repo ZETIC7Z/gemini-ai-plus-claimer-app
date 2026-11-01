@@ -1,0 +1,66 @@
+name: Build & Release ZETICUZ AI PLUS GEN Package
+
+on:
+  push:
+    tags:
+      - "v*"
+    branches:
+      - main
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  build-and-release:
+    runs-on: windows-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python 3.12
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: "pip"
+
+      - name: Install build dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install pyinstaller playwright customtkinter
+
+      - name: Build Standalone Executable
+        run: |
+          python scripts/build_exe.py
+
+      - name: Package Release Archive
+        shell: pwsh
+        run: |
+          $Version = if ($env:GITHUB_REF -match 'refs/tags/(v.*)') { $Matches[1] } else { "v1.0.1" }
+          $ArchiveName = "Zeticuz AI Plus Gen $Version by ZETICUZ.zip"
+          Compress-Archive -Path "dist\Zeticuz AI Plus Gen.exe", "README.md", "images\app_icon.png" -DestinationPath $ArchiveName
+          $Hash = (Get-FileHash -Path $ArchiveName -Algorithm SHA256).Hash
+          "$Hash  $ArchiveName" | Out-File -Encoding utf8 "SHA256SUMS.txt"
+          Write-Output "RELEASE_ARCHIVE=$ArchiveName" >> $env:GITHUB_ENV
+
+      - name: Publish GitHub Release
+        if: startsWith(github.ref, 'refs/tags/v')
+        uses: softprops/action-gh-release@v2
+        with:
+          files: |
+            ${{ env.RELEASE_ARCHIVE }}
+            SHA256SUMS.txt
+            dist/Zeticuz AI Plus Gen.exe
+          name: ZETICUZ AI PLUS GEN ${{ github.ref_name }}
+          body: |
+            ## ⚡ ZETICUZ AI PLUS GEN — Official Release
+            Automated 12-Month Google AI Plus Promotional Provisioner
+            Developed by **Sam Pangilinan (ZETICUZ / TECHNOLOHIYA)**
+            Website: [https://www.zeticuz.xyz/](https://www.zeticuz.xyz/)
+
+            ### 📦 Release Assets
+            - **Binary Archive**: `${{ env.RELEASE_ARCHIVE }}`
+            - **Integrity Checksum**: Verify with `SHA256SUMS.txt`
+            - **Zero Telemetry**: 100% Local Execution
+          draft: false
+          prerelease: false

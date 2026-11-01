@@ -1,15 +1,15 @@
-# Google AI Plus Portal — Official Web Hub & Distribution
+# ZETICUZ AI PLUS GEN — Official Web Hub & Distribution Portal
 
-[![Live Deployment: Vercel](https://img.shields.io/badge/deployment-Vercel-000000?style=flat-square&logo=vercel)](https://gemini-ai-plus-claimer.vercel.app/)
-[![Platform: Windows 10 / 11](<https://img.shields.io/badge/platform-Windows%2010%20%2F%2011%20(64--bit)-0284c7?style=flat-square&logo=windows>)](https://github.com/nmrisrl11/gemini-ai-plus-claimer-app/releases)
-[![Version: v1.0.1](https://img.shields.io/badge/release-v1.0.1-38bdf8?style=flat-square&logo=github)](https://github.com/nmrisrl11/gemini-ai-plus-claimer-app/releases/tag/v1.0.1)
-[![WCAG 2.1 AA Compliant](https://img.shields.io/badge/accessibility-WCAG%202.1%20AA-10b981?style=flat-square)](https://www.w3.org/WAI/WCAG21/quickref/)
+[![Platform: Windows 10 / 11](<https://img.shields.io/badge/platform-Windows%2010%20%2F%2011%20(64--bit)-0284c7?style=flat-square&logo=windows>)](https://github.com/ZETIC7Z/gemini-ai-plus-claimer-app/releases)
+[![Version: v1.0.1](https://img.shields.io/badge/release-v1.0.1-38bdf8?style=flat-square&logo=github)](https://github.com/ZETIC7Z/gemini-ai-plus-claimer-app/releases/tag/v1.0.1)
+[![Developer: Sam Pangilinan](https://img.shields.io/badge/developer-Sam%20Pangilinan-10b981?style=flat-square)](https://www.zeticuz.xyz/)
 [![Telemetry: Zero](<https://img.shields.io/badge/telemetry-Zero%20(100%25%20Local)-10b981?style=flat-square>)](#-privacy--local-execution)
 
-Official landing page and release distribution portal for **Google AI Plus Portal** — a lightweight, zero-telemetry Windows desktop utility engineered to automate promotional student onboarding and capture the canonical official Google One offer link for 12 months of complimentary Gemini Advanced and 2TB cloud storage.
+Official web hub, 3D interactive portal, and release distribution platform for **ZETICUZ AI PLUS GEN** — an independent, lightweight, zero-telemetry Windows desktop utility engineered by **Sam Pangilinan (ZETICUZ / TECHNOLOHIYA)** to automate promotional student onboarding and capture canonical official Google One offer links for 12 months of complimentary Gemini Advanced and 2TB cloud storage.
 
 🌐 **Live Web Hub**: [https://gemini-ai-plus-claimer.vercel.app](https://gemini-ai-plus-claimer.vercel.app/)  
-📦 **Official Release (v1.0.1)**: [https://github.com/nmrisrl11/gemini-ai-plus-claimer-app/releases/tag/v1.0.1](https://github.com/nmrisrl11/gemini-ai-plus-claimer-app/releases/tag/v1.0.1)
+📦 **Official Release (v1.0.1)**: [https://github.com/ZETIC7Z/gemini-ai-plus-claimer-app/releases/tag/v1.0.1](https://github.com/ZETIC7Z/gemini-ai-plus-claimer-app/releases/tag/v1.0.1)  
+👨‍💻 **Developer Portfolio**: [https://www.zeticuz.xyz/](https://www.zeticuz.xyz/)
 
 ---
 
@@ -17,124 +17,113 @@ Official landing page and release distribution portal for **Google AI Plus Porta
 
 ```
 gemini-ai-plus-claimer-app/
-├── 404.html          # Custom, restrained 404 error page matching homepage UI
-├── index.html          # Semantic, accessible landing page (Tailwind CSS CDN)
-├── robots.txt          # Search engine crawler directives & sitemap reference
-├── sitemap.xml         # XML sitemap for SEO discovery
-├── site.webmanifest    # Web app manifest for installable/bookmark metadata
-├── README.md           # Project documentation and deployment guide
-├── CHANGELOG.md        # Comprehensive version history & release changelog
-├── .prettierrc         # Project-level Prettier code formatting rules
-├── .prettierignore     # Files excluded from Prettier formatting
-├── .gitignore          # Git exclusion rules
-├── .vscode/
-│   ├── settings.json   # Workspace editor formatting rules (formatOnSave)
-│   └── extensions.json # Recommended VS Code extensions (Prettier, Tailwind)
+├── .github/
+│   └── workflows/
+│       └── build-release.yml # Automated GitHub Actions release builder & packager
+├── app/
+│   ├── zeticuz_ai_plus_gen.py # Standalone Python desktop GUI application
+│   └── requirements.txt      # Python dependencies (Playwright, PyInstaller, CustomTkinter)
+├── scripts/
+│   └── build_exe.py          # PyInstaller automated packaging script
+├── build.bat                 # 1-click Windows compilation script
+├── 404.html                  # Custom, restrained 404 error page matching homepage UI
+├── index.html                # Semantic, accessible landing page with Three.js 3D motion
+├── robots.txt                # Search engine crawler directives & sitemap reference
+├── sitemap.xml               # XML sitemap for SEO discovery
+├── site.webmanifest          # Web app manifest for installable/bookmark metadata
+├── README.md                 # Project documentation and deployment guide
+├── CHANGELOG.md              # Comprehensive version history & release changelog
+├── package.json              # NPM package file with build & format commands
 ├── css/
-│   └── style.css       # Custom scrollbars, focus rings & prefers-reduced-motion
+│   └── style.css             # Custom scrollbars, focus rings & prefers-reduced-motion
 ├── js/
-│   └── app.js          # Direct download routing, mobile drawer, a11y live announcer
+│   ├── app.js                # Centralized CONFIG, interactive simulator & a11y announcer
+│   └── three-hero.js         # Three.js 60fps 3D neural core & orbital motion system
 └── images/
-    ├── app_icon.ico    # Multi-resolution Windows application icon
-    ├── app_icon.png    # High-resolution brand icon (512x512)
-    ├── og-image.png    # Official 1200x630 OpenGraph & Twitter social preview banner
-    ├── qrcode-bmc.png  # Buy Me a Coffee donation QR code
-    ├── qrcode-gcash.JPG# GCash donation QR code
-    └── shuffle.png     # UI accessory icon
+    ├── ZE.svg                # Official primary brand vector logo
+    ├── zeticuz-logo.svg      # Official developer signature logo
+    ├── app_icon.ico          # Multi-resolution Windows application icon
+    ├── app_icon.png          # High-resolution brand icon (512x512)
+    └── og-image.png          # Official 1200x630 OpenGraph & Twitter preview banner
 ```
 
 ---
 
-## ⚡ Key Features of the Landing Page
+## ⚡ Key Features
 
-### 1. Universal Multi-Browser Engine (New in v1.0.1)
+### 1. Three.js 3D WebGL Hero Motion System
 
-- **Intelligent 5-Tier Discovery Cascade**: Detects and binds to existing Chromium browsers on the user's PC:
-  1. Google Chrome channel (`chrome`)
-  2. Microsoft Edge channel (`msedge` — pre-installed on 100% of Windows 10 & 11 PCs)
-  3. Direct scan for Brave Browser, Google Chrome, Microsoft Edge, Opera, and Vivaldi
-  4. Local Playwright cache (`%LOCALAPPDATA%\ms-playwright`)
-  5. Unbundled fallback
-- **Zero-Bloat Guarantee**: Runs out-of-the-box without downloading or bundling 400MB browser runtimes.
+- **Interactive 3D Neural Core**: Real-time WebGL rendering of a futuristic geometric AI crystal surrounded by counter-rotating particle rings and cyber dust.
+- **Pointer Parallax & Damped Physics**: Responds dynamically to mouse and touch coordinates with buttery 60fps interpolation.
+- **Accessibility & Battery Aware**: Automatically honors `prefers-reduced-motion` and pauses rendering via `IntersectionObserver` when scrolled out of view.
 
-### 2. Transparent GitHub Releases Distribution & Open-Source Integrity
+### 2. Standalone Windows Desktop Application (`app/zeticuz_ai_plus_gen.py`)
 
-- **GitHub Releases Distribution Hub**: All download buttons and CTAs route directly to the official [GitHub Release Hub (v1.0.1)](https://github.com/nmrisrl11/gemini-ai-plus-claimer-app/releases/tag/v1.0.1), ensuring transparent hosting, binary integrity verification (SHA-256), and compliance with Google Safe Browsing standards.
-- **Open-Source Transparency**: Prominent [GitHub Repository](https://github.com/nmrisrl11/gemini-ai-plus-claimer-app) verification badge directly on the hero section, reinforcing community trust, verifiable source code, and zero-credential-harvesting architecture.
+- **Native GUI Execution**: Styled in modern dark slate palette (`#090d16` base, `#0f172a` container, `#0284c7` buttons).
+- **Universal Multi-Browser Cascade**: Auto-detects and binds to pre-installed Google Chrome, Microsoft Edge, Brave, and Opera on Windows.
+- **Profile Randomizer**: 1-click demographic generation for realistic candidate details.
+- **Human-in-the-Loop Dialog**: Prompts cleanly for confirmation codes only when required.
+- **Direct Local Archive**: Saves resolved redemption links locally to `results/zeticuz_google_one_links.txt`.
 
-### 2. Accessibility (WCAG 2.1 AA Compliance)
+### 3. Automated GitHub Actions Package Pipeline
 
-- **Bypass Blocks (`2.4.1`)**: Accessible keyboard "Skip to main content" link placed at the top of `<body>`.
-- **Landmark Regions**: Proper semantic structure using `<header role="banner">`, `<main id="main-content">`, `<footer role="contentinfo">`, and uniquely labeled navigation regions.
-- **Screen Reader Announcer (`4.1.3`)**: Dynamic `aria-live="polite"` region alerts assistive tech users when code snippets or hashes are copied to clipboard.
-- **Sanitized Decorative SVGs (`1.1.1`)**: All decorative inline SVGs contain `aria-hidden="true" focusable="false"`.
-- **Reduced Motion (`2.3.3` & `2.2.2`)**: Media queries automatically disable smooth scrolling and blinking cursors for visitors with vestibular motion sensitivities.
-- **High-Contrast Palette (`1.4.3`)**: All body and disclaimer typography exceeds 7:1 contrast ratios on dark slate backgrounds.
+- When you fork or tag (`v*`) this repository, `.github/workflows/build-release.yml` automatically builds the Windows binary, compresses it into `Zeticuz AI Plus Gen v1.0.1 by ZETICUZ.zip`, generates `SHA256SUMS.txt`, and publishes a GitHub Release.
 
-### 3. SEO & Rich Social Previews
+### 4. Accessibility (WCAG 2.1 AA Compliance)
 
-- **High-Resolution OpenGraph & Twitter Cards**: 1200&times;630 `og:image` and `summary_large_image` Twitter card for rich previews on Discord, Telegram, X, and Slack.
-- **Structured Data (JSON-LD)**: `SoftwareApplication` and `WebSite` schemas providing Google with software version, license price ($0.00), OS compatibility, and author details for rich search snippets.
-- **Search Engine Discoverability**: Deployed `robots.txt` and `sitemap.xml` referencing canonical URLs.
-
-### 4. Telemetry & Speed Insights
-
-- Integrated **Vercel Web Analytics** (`/_vercel/insights/script.js`) for privacy-friendly traffic analysis.
-- Integrated **Vercel Speed Insights** (`/_vercel/speed-insights/script.js`) for real-user Core Web Vitals monitoring (LCP, FID, CLS).
-
-### 5. Custom 404 Error Page & Universal Routing
-
-- **Design Alignment**: Built with restrained typography, matching the slate dark palette (`#090d16`), full-fidelity sticky navbar, and legal footer for consistent branding.
-- **Dual-Environment Support**: Features an inline environment-aware `<base>` fallback and JavaScript link adapter (`js/app.js`) that supports both local offline testing (`file://`) and live Vercel deployments (`http://` / `https://`).
-- **Layout Shift Elimination**: Employs `scrollbar-gutter: stable; overflow-y: scroll;` in `css/style.css` so transitioning between the full-height landing page and 404 error page causes zero horizontal jitter.
-- **Search Engine Friendly**: Tagged with `<meta name="robots" content="noindex, follow" />` and excluded in `robots.txt` / `sitemap.xml` to prevent dead links from polluting search indices.
+- **Skip Navigation Link (2.4.1)**: Screen-reader keyboard bypass link at top of `<body>`.
+- **Screen Reader Announcer (4.1.3)**: Live polite ARIA regions announcing clipboard and generation updates.
+- **High-Contrast Palette (1.4.3)**: Typography exceeds 7:1 contrast ratios on dark slate backgrounds.
 
 ---
 
-## 🚀 Deployment (Vercel)
+## 🚀 Running & Packaging Locally
 
-The landing page is optimized for instant static hosting on Vercel with zero build configurations required:
+### Run the Web Hub Locally:
 
-1. Connect `nmrisrl11/gemini-ai-plus-claimer-app` to your Vercel account.
-2. Set Framework Preset to **Other** (Plain HTML).
-3. The root directory `/` serves `index.html`, `css/`, `js/`, and `images/`.
-4. Any push to `main` automatically triggers deployment and activates Vercel Analytics and Speed Insights.
+```bash
+python -m http.server 3000
+# Open http://localhost:3000 in your browser
+```
+
+### Run the Desktop App:
+
+```bash
+python app/zeticuz_ai_plus_gen.py
+```
+
+### Build the Standalone Windows `.exe`:
+
+```bash
+# Double click build.bat or run:
+python -m pip install -r app/requirements.txt
+python scripts/build_exe.py
+# The output binary is created at dist/Zeticuz AI Plus Gen.exe
+```
 
 ---
 
 ## 📦 Release Package Details (v1.0.1)
 
-| Attribute              | Specification                                                      |
-| :--------------------- | :----------------------------------------------------------------- |
-| **Release Version**    | `v1.0.1` (Stable)                                                  |
-| **Release Archive**    | `Google AI Plus Portal v1.0.1 by nmrisrl11.zip`                    |
-| **Application Binary** | `Google AI Plus Portal v1.0.1.exe`                                 |
-| **Target OS**          | Windows 10 / Windows 11 (64-bit)                                   |
-| **Package Type**       | Single portable binary (Zero installation)                         |
-| **SHA-256 Checksum**   | `05D5D3B04C192BC90D2F835F7FC741FCC702E16A38B26FC7C5836D3AE7E7EE28` |
-
-### Checksum Verification in PowerShell:
-
-```powershell
-Get-FileHash "Google AI Plus Portal v1.0.1.exe" -Algorithm SHA256
-```
+| Attribute              | Specification                                     |
+| :--------------------- | :------------------------------------------------ |
+| **Release Version**    | `v1.0.1` (Stable)                                 |
+| **Release Archive**    | `Zeticuz AI Plus Gen v1.0.1 by ZETICUZ.zip`       |
+| **Application Binary** | `Zeticuz AI Plus Gen.exe`                         |
+| **Target OS**          | Windows 10 / Windows 11 (64-bit)                  |
+| **Developer**          | Sam Pangilinan (ZETICUZ / TECHNOLOHIYA)           |
+| **Package Type**       | Single portable binary (Zero installation needed) |
 
 ---
 
-## 🛠️ Local Development & Code Quality
+## 👨‍💻 Developer Attribution & Standard Signature
 
-This project enforces strict code formatting using Prettier and VS Code editor hooks:
-
-```bash
-# Check formatting
-npx prettier --check .
-
-# Auto-format all files
-npx prettier --write .
-```
+Developed by **Sam Pangilinan** (`ZETICUZ` / `ZETIC7Z` / `TECHNOLOHIYA`).  
+Explore developer projects, full-stack systems, and 3D WebGL builds at:  
+👉 **[https://www.zeticuz.xyz/](https://www.zeticuz.xyz/)**
 
 ---
 
 ## ⚖️ Disclaimer & Non-Affiliation
 
-This project is an independent utility provided strictly for convenience, personal educational testing, and research. This project is **not** affiliated with, sponsored by, or endorsed by Google LLC, Alphabet Inc., or Internshala. Google, Google One, and Gemini are trademarks of Google LLC.
+This project is an independent desktop utility provided strictly for convenience, personal educational testing, and research. This project is **not** affiliated with, sponsored by, or endorsed by Google LLC, Alphabet Inc., or Internshala. Google, Google One, and Gemini are trademarks of Google LLC.

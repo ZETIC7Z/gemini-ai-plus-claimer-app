@@ -23,3 +23,11 @@ yarn-error.log*
 *.exe
 dist/
 build/
+
+# Python & Package caches
+__pycache__/
+*.py[cod]
+*$py.class
+results/
+.playwright-mcp/
+node_modules/

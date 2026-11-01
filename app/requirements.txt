@@ -1,0 +1,5 @@
+# ZETICUZ AI PLUS GEN — Requirements
+# Desktop automation and packaging dependencies
+pyinstaller>=6.3.0
+playwright>=1.40.0
+customtkinter>=5.2.0

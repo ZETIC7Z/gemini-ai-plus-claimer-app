@@ -1,0 +1,26 @@
+{
+	"name": "gemini-ai-plus-claimer-app",
+	"version": "1.0.1",
+	"description": "ZETICUZ AI PLUS GEN — Official Web Hub and Release Distribution Portal",
+	"author": "Sam Pangilinan <zeticuz> (https://www.zeticuz.xyz/)",
+	"homepage": "https://www.zeticuz.xyz/",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/ZETIC7Z/gemini-ai-plus-claimer-app.git"
+	},
+	"scripts": {
+		"format": "npx prettier --write .",
+		"check-format": "npx prettier --check .",
+		"serve": "python -m http.server 3000",
+		"build:app": "python scripts/build_exe.py",
+		"start:app": "python app/zeticuz_ai_plus_gen.py"
+	},
+	"keywords": [
+		"zeticuz",
+		"google-ai-plus",
+		"gemini-advanced",
+		"google-one",
+		"windows-utility"
+	],
+	"license": "MIT"
+}
