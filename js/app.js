@@ -136,23 +136,19 @@ if (window.location.protocol === "http:" || window.location.protocol === "https:
 // Interactive Desktop Mockup Simulator (Browser-Level Live Demonstration)
 (function initMockupSimulator() {
 	const CANDIDATES = [
-		{ name: "Advik Malhotra", inst: "IIT Bombay", field: "Computer Science", year: "2026" },
-		{ name: "Aarav Patel", inst: "BITS Pilani", field: "Artificial Intelligence", year: "2026" },
-		{ name: "Rohan Verma", inst: "NIT Trichy", field: "Information Technology", year: "2025" },
-		{
-			name: "Ananya Iyer",
-			inst: "Delhi Tech University",
-			field: "Software Engineering",
-			year: "2027",
-		},
-		{ name: "Diya Deshmukh", inst: "COEP Pune", field: "Data Science", year: "2026" },
-		{ name: "Kabir Sen", inst: "IISc Bangalore", field: "Computer Engineering", year: "2025" },
+		{ fname: "Pari", lname: "Fernandes", pass: "NIO^L!0pLvnd", phone: "6781377730" },
+		{ fname: "Shaurya", lname: "Das", pass: "m0@L2s2*125W", phone: "8482185685" },
+		{ fname: "Aarav", lname: "Sharma", pass: "Zet#79K9!vLq", phone: "9820145520" },
+		{ fname: "Vivaan", lname: "Verma", pass: "pL!98*QzxW2", phone: "9137452819" },
+		{ fname: "Aditya", lname: "Gupta", pass: "Kn^81@pMs90", phone: "7021384910" },
+		{ fname: "Reyansh", lname: "Chopra", pass: "Qr&42!vLm01", phone: "8890214389" },
 	];
 
-	const elName = document.getElementById("mock-name");
-	const elInst = document.getElementById("mock-inst");
-	const elField = document.getElementById("mock-field");
-	const elYear = document.getElementById("mock-year");
+	const elFname = document.getElementById("mock-fname");
+	const elLname = document.getElementById("mock-lname");
+	const elEmail = document.getElementById("mock-email");
+	const elPass = document.getElementById("mock-password");
+	const elPhone = document.getElementById("mock-phone");
 	const elBtnRandom = document.getElementById("mock-btn-randomize");
 	const elBtnStart = document.getElementById("mock-btn-start");
 	const elTerminal = document.getElementById("mock-terminal-log");
@@ -184,20 +180,20 @@ if (window.location.protocol === "http:" || window.location.protocol === "https:
 
 	elBtnRandom.addEventListener("click", () => {
 		const pick = CANDIDATES[Math.floor(Math.random() * CANDIDATES.length)];
-		if (elName) elName.textContent = pick.name;
-		if (elInst) elInst.textContent = pick.inst;
-		if (elField) elField.textContent = pick.field;
-		if (elYear) elYear.textContent = pick.year;
+		if (elFname) elFname.textContent = pick.fname;
+		if (elLname) elLname.textContent = pick.lname;
+		if (elPass) elPass.textContent = pick.pass;
+		if (elPhone) elPhone.textContent = pick.phone;
 
 		// Flash effect
-		[elName, elInst, elField, elYear].forEach((el) => {
+		[elFname, elLname, elPass, elPhone].forEach((el) => {
 			if (el) {
 				el.classList.add("text-sky-300");
 				setTimeout(() => el.classList.remove("text-sky-300"), 400);
 			}
 		});
 
-		logTerminal(`Profile randomized: ${pick.name} (${pick.inst})`, "info");
+		logTerminal(`Credentials randomized: ${pick.fname} ${pick.lname} (+91 ${pick.phone})`, "info");
 	});
 
 	if (elBtnStart) {
@@ -220,8 +216,9 @@ if (window.location.protocol === "http:" || window.location.protocol === "https:
 			}, 900);
 
 			setTimeout(() => {
-				const candidateName = elName ? elName.textContent : "Advik Malhotra";
-				logTerminal(`[2/5] Submitting candidate profile: ${candidateName}...`, "info");
+				const candidateName =
+					elFname && elLname ? `${elFname.textContent} ${elLname.textContent}` : "Pari Fernandes";
+				logTerminal(`[2/5] Submitting candidate credentials: ${candidateName}...`, "info");
 			}, 2100);
 
 			setTimeout(() => {

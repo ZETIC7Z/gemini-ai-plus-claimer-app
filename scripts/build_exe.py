@@ -19,6 +19,9 @@ def build():
     print("Building ZETICUZ AI PLUS GEN Portable Windows Executable...")
     print("=" * 60)
 
+    ENGINE_DIR = os.path.join(ROOT_DIR, "app", "engine")
+    IMAGES_DIR = os.path.join(ROOT_DIR, "images")
+
     cmd = [
         sys.executable,
         "-m",
@@ -29,6 +32,9 @@ def build():
         f"--name=Zeticuz AI Plus Gen",
         f"--icon={ICON_FILE}",
         f"--add-data={ICON_FILE};images",
+        f"--add-data={ENGINE_DIR};engine",
+        f"--add-data={IMAGES_DIR};images",
+        "--collect-all=customtkinter",
         APP_SCRIPT
     ]
 
