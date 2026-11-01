@@ -21,8 +21,10 @@ yarn-error.log*
 
 # Executables and builds (binary releases should be uploaded via GitHub Releases, not git tree)
 *.exe
+!downloads/*.exe
 dist/
 build/
+*.spec
 
 # Python & Package caches
 __pycache__/

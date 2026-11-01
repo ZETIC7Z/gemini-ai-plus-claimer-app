@@ -14,8 +14,12 @@ const CONFIG = {
 	DEV_NAME: "Sam Pangilinan",
 	DEV_HANDLE: "ZETICUZ",
 	PORTFOLIO_URL: "https://www.zeticuz.xyz/",
+	EXE_FILENAME: "Zeticuz AI Plus Gen.exe",
+	ZIP_FILENAME: "Zeticuz AI Plus Gen v1.0.1 by ZETICUZ.zip",
+	DIRECT_EXE_URL: "./downloads/Zeticuz AI Plus Gen.exe",
+	DIRECT_ZIP_URL: "./downloads/Zeticuz AI Plus Gen v1.0.1 by ZETICUZ.zip",
 	get DIRECT_DOWNLOAD_URL() {
-		return `${this.REPO_URL}/releases/tag/${this.VERSION}`;
+		return "./downloads/Zeticuz AI Plus Gen.exe";
 	},
 	get RELEASES_URL() {
 		return `${this.REPO_URL}/releases`;
@@ -25,10 +29,11 @@ const CONFIG = {
 	},
 };
 
-// Wire all direct release download buttons
+// Wire all direct release download buttons to download the built executable
 document.querySelectorAll(".direct-download-link").forEach((link) => {
 	if (CONFIG.DIRECT_DOWNLOAD_URL) {
 		link.href = CONFIG.DIRECT_DOWNLOAD_URL;
+		link.setAttribute("download", CONFIG.EXE_FILENAME);
 	}
 });
 

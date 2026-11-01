@@ -96,8 +96,9 @@ Per Sam Pangilinan's global instructions:
 ## 5. 🔗 Release & Direct Download Architecture
 
 - **Release Tag URL**: `https://github.com/ZETIC7Z/gemini-ai-plus-claimer-app/releases/tag/v1.0.1`
-- **Release Archive Filename**: `Zeticuz AI Plus Gen v1.0.1 by ZETICUZ.zip`
-- **Application Binary Filename**: `Zeticuz AI Plus Gen.exe`
+- **Direct Site Download**: `./downloads/Zeticuz AI Plus Gen.exe` (10.1 MB)
+- **Portable Zip Bundle**: `./downloads/Zeticuz AI Plus Gen v1.0.1 by ZETICUZ.zip` (9.8 MB)
+- **SHA-256 Checksum**: `1D25E74C5A372504F70A6777022ED53D1F61756C9DA7B1E3DC89B5535E2E0AC1`
 - **Centralized Configuration in `js/app.js`**:
   ```javascript
   const CONFIG = {
@@ -106,6 +107,7 @@ Per Sam Pangilinan's global instructions:
   	REPO_URL: "https://github.com/ZETIC7Z/gemini-ai-plus-claimer-app",
   	DEV_NAME: "Sam Pangilinan",
   	PORTFOLIO_URL: "https://www.zeticuz.xyz/",
+  	DIRECT_DOWNLOAD_URL: "./downloads/Zeticuz AI Plus Gen.exe",
   };
   ```
 

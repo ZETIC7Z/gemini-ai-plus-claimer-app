@@ -105,14 +105,22 @@ python scripts/build_exe.py
 
 ## 📦 Release Package Details (v1.0.1)
 
-| Attribute              | Specification                                     |
-| :--------------------- | :------------------------------------------------ |
-| **Release Version**    | `v1.0.1` (Stable)                                 |
-| **Release Archive**    | `Zeticuz AI Plus Gen v1.0.1 by ZETICUZ.zip`       |
-| **Application Binary** | `Zeticuz AI Plus Gen.exe`                         |
-| **Target OS**          | Windows 10 / Windows 11 (64-bit)                  |
-| **Developer**          | Sam Pangilinan (ZETICUZ / TECHNOLOHIYA)           |
-| **Package Type**       | Single portable binary (Zero installation needed) |
+| Attribute              | Specification                                                      |
+| :--------------------- | :----------------------------------------------------------------- |
+| **Release Version**    | `v1.0.1` (Stable)                                                  |
+| **Release Archive**    | `Zeticuz AI Plus Gen v1.0.1 by ZETICUZ.zip` (9.8 MB)               |
+| **Application Binary** | `Zeticuz AI Plus Gen.exe` (10.1 MB)                                |
+| **Direct Site Path**   | `downloads/Zeticuz AI Plus Gen.exe`                                |
+| **SHA-256 Checksum**   | `1D25E74C5A372504F70A6777022ED53D1F61756C9DA7B1E3DC89B5535E2E0AC1` |
+| **Target OS**          | Windows 10 / Windows 11 (64-bit)                                   |
+| **Developer**          | Sam Pangilinan (ZETICUZ / TECHNOLOHIYA)                            |
+| **Package Type**       | Single portable binary (Zero installation needed)                  |
+
+### Checksum Verification in PowerShell:
+
+```powershell
+Get-FileHash "downloads\Zeticuz AI Plus Gen.exe" -Algorithm SHA256
+```
 
 ---
 
