@@ -96,9 +96,13 @@ Per Sam Pangilinan's global instructions:
 ## 5. 🔗 Release & Direct Download Architecture
 
 - **Release Tag URL**: `https://github.com/ZETIC7Z/gemini-ai-plus-claimer-app/releases/tag/v1.0.1`
-- **Direct Site Download**: `./downloads/Zeticuz AI Plus Gen.exe` (10.1 MB)
-- **Portable Zip Bundle**: `./downloads/Zeticuz AI Plus Gen v1.0.1 by ZETICUZ.zip` (9.8 MB)
-- **SHA-256 Checksum**: `06C18475DEE8ECBEB0230C59C96E46D8768E2D9703E13A1343353841B1763CD6`
+- **Direct Site Download**: `./downloads/Zeticuz AI Plus Gen.exe` (Bundled with Playwright & Chromium)
+- **Portable Zip Bundle**: `./downloads/Zeticuz AI Plus Gen v1.0.1 by ZETICUZ.zip`
+- **SHA-256 Checksum**: `EF7342C1319AB05F4011EFC5B93EA27ACC7A1FFDF361854F5408B56965F22B5F`
+- **Brand Asset Architecture**:
+  - Website App Logo & Desktop App Icon: `images/zeticuz_app_icon.png` (3rd image squircle monogram) & `images/app_icon.ico`
+  - Desktop Application Header Banner: `images/zeticuz_header_logo.png` (2nd image 3D metallic red "ZE" monogram with crisp white bold uppercase "ZETICUZ")
+  - Official Developer Signature: `images/zeticuz-logo.svg` + centered footer signature linked to `https://www.zeticuz.xyz/`
 - **Centralized Configuration in `js/app.js`**:
   ```javascript
   const CONFIG = {
@@ -121,5 +125,7 @@ Per Sam Pangilinan's global instructions:
    ```
 2. **Preserve Semantic HTML & ARIA**:
    Never add an `<svg>` without `aria-hidden="true" focusable="false"`. Ensure all interactive buttons have explicit `type="button"` and labels.
-3. **Verify in Real Browser**:
-   Always verify locally via Playwright / Chrome DevTools before claiming completion.
+3. **Preserve Underlying Engine & Config**:
+   The Playwright claimer pipeline and account activation flow (`claimer.pyc`, `constants.pyc`, and queue listeners) are 100% verified and activated. Never alter the underlying parameters.
+4. **Verify in Real Browser & Desktop**:
+   Always verify locally via Playwright / Chrome DevTools and desktop process execution before claiming completion.

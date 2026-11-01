@@ -27,7 +27,7 @@ jobs:
       - name: Install build dependencies
         run: |
           python -m pip install --upgrade pip
-          pip install pyinstaller playwright customtkinter
+          pip install pyinstaller playwright customtkinter pillow greenlet
 
       - name: Build Standalone Executable
         run: |
