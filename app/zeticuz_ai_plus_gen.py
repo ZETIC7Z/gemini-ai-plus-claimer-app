@@ -93,12 +93,9 @@ class ZeticuzAIPlusApp(gui.GeminiClaimerApp):
         # Set taskbar and window icon
         self._apply_branding_icons()
 
-        # 2. Pre-populate user test email
+        # 2. Ensure email field is clean and default empty for user input
         if hasattr(self, "entry_email"):
-            current = self.entry_email.get().strip()
-            if not current or current == "example@gmail.com":
-                self.entry_email.delete(0, "end")
-                self.entry_email.insert(0, "samxerz73@gmail.com")
+            self.entry_email.delete(0, "end")
 
         # 3. Start Smooth Pulsing Animation Loop
         self._start_pulse_animation()
